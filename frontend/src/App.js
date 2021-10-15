@@ -1,11 +1,19 @@
 import React from 'react';
-
+import  Container  from 'react-bootstrap/Container';
+import { Header, Footer } from './compenents'
+import HomeScreen from './screens/HomeScreen'
 
 const App = () => {
   return (
-    <>
-     <h1>Welcome to D-Lights</h1> 
-    </>
+    <div className="body__custom">
+    <Header/>
+     <main className="py-3"> 
+       <Container>
+         <HomeScreen />
+       </Container>
+     </main>
+    <Footer />
+    </div>
   )
 }
 
