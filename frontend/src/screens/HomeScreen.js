@@ -1,12 +1,11 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
-import { Hero, Showcase, Products, Brands } from '../compenents'
+import { Hero, Products, Brands } from '../components'
 
 const HomeScreen = () => {
     return (
         <>
             <Hero />
-            <Showcase />
             <Products />
             <Brands />
         </>

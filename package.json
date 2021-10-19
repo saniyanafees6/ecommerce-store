@@ -1,0 +1,14 @@
+{
+  "name": "store-application",
+  "version": "1.0.0",
+  "description": "lights store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "author": "Saniya Nafees",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

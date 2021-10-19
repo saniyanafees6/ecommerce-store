@@ -4,18 +4,24 @@ main {
 }
 .display__hover.card-body {
 	position: absolute;
-	bottom: 4%;
+	bottom: 0%;
 	background-color: #cacaca;
-	width: 90%;
+	width: 100%;
 }
 
 .body__custom {
 	background-color: #111111;
 }
-.hero__heading {
+.hero__heading,
+.secondary__heading {
 	font-family: 'Cinzel Decorative', cursive;
 	color: #ffffff;
+}
+.hero__heading {
 	font-size: 80px;
+}
+h2.secondary__heading {
+	font-size: 45px;
 }
 .card__container,
 .hero__text {
@@ -56,11 +62,70 @@ img.card-img-top.card__image {
 	width: 50px;
 	margin: auto;
 }
+.centered {
+	text-align: center;
+}
 .hero__card.card {
 	background-color: #333333;
-	text-align: center;
 	padding: 3rem 1rem 2rem;
 }
 .hero__card__title {
 	color: #ffffff;
+}
+.card {
+	border: 0px !important;
+	background-color: #333333 !important;
+	/* border-radius: 0 !; */
+}
+.product__container {
+	display: grid;
+	grid-template-areas: ". one four three ." ". one two five .";
+	grid-gap: 0 1rem;
+}
+.product__1 {
+	grid-area: one;
+	height: 97%;
+	overflow: hidden;
+}
+.product__2 {
+	grid-area: two;
+	height: 95%;
+	overflow: hidden;
+}
+.product__3 {
+	grid-area: three;
+	height: 95%;
+	overflow: hidden;
+}
+.product__4 {
+	height: 95%;
+	overflow: hidden;
+	grid-area: four;
+}
+.product__5 {
+	grid-area: five;
+	height: 95%;
+	overflow: hidden;
+}
+.brands__container {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	align-items: center;
+}
+.footer {
+	background-color: #000000;
+}
+.footer .container {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	color: #fff;
+}
+.padding {
+	padding: 4rem 0;
+}
+button.btn.btn-outline-light.w-100.btn.btn-primary {
+	background-color: transparent;
+}
+button.btn.btn-outline-light.w-100.btn.btn-primary:hover {
+	background-color: white;
 }
