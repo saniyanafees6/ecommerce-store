@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Black LED Pendant Lamp',
     image: '/images/pendantlight.png',
     description:
@@ -12,7 +11,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'Table Lamp',
     image: '/images/tablelamp1.png',
     description:
@@ -24,7 +22,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Table Lamp',
     image: '/images/tablelamp2.png',
     description:
@@ -36,7 +33,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '4',
     name: 'Floor Lamp',
     image: '/images/floorlamp.png',
     description:
@@ -48,7 +44,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'Hexagon Sconce',
     image: '/images/hexchandelier.png',
     description:
@@ -61,4 +56,4 @@ const products = [
   }
 ]
 
-module.exports = products
+export default products

@@ -1,33 +1,32 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import Product from './Product'
 import { Button } from 'react-bootstrap'
-import axios from 'axios'
+import Message from '../components/Message'
+ import Loader from '../components/Loader'
+import { listProducts } from '../actions/productActions'
 
 const Products = () => {
+  const dispatch = useDispatch()
 
-    const [products, setProducts] = useState([])
+  const productList = useSelector(state => state.productList)
+  const { loading, error, products } = productList
 
-useEffect(() => {
-    const fetchProducts = async () => {
-      const { data } = await axios.get('/api/products')
-
-      setProducts(data)
-    }
-
-    fetchProducts()
-  }, [])
-
-    return (
-        <div className="padding">
-        <h2 className="secondary__heading centered">Popular Products</h2>
-                <div className="product__container">
-                    {products.map( product => (
-                            <Product key={product._id} product={product} />
-                    ))}
-                </div>
-                <div className="hero__button__container centered"><Button variant="outline-light" className="hero__button">View All Products</Button></div>
-        </div>
-    )
+  useEffect(() => {
+    dispatch(listProducts())
+  }, [dispatch])
+  return (
+      <div className="padding">
+      <h2 className="secondary__heading centered">Popular Products</h2>
+      {loading ? (<Loader />) : error ? (<Message variant='danger'>{error}</Message>) : (<div className="product__container">
+                  {products.map( product => (
+                          <Product key={product._id} product={product} />
+                  ))}
+              </div>)}
+              
+              <div className="hero__button__container centered"><Button variant="outline-light" className="hero__button">View All Products</Button></div>
+      </div>
+  )
 }
 
 export default Products
