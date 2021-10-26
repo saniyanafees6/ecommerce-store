@@ -5,3 +5,6 @@ export {default as Products} from './Products';
 export {default as Rating} from './Rating';
 export {default as Hero} from './Hero';
 export {default as Brands} from './Brands';
+export {default as Loader} from './Loader';
+export {default as Message} from './Message';
+export {default as FormContainer} from './FormContainer';

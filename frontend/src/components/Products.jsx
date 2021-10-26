@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import Product from './Product'
 import { Button } from 'react-bootstrap'
-import Message from '../components/Message'
- import Loader from '../components/Loader'
 import { listProducts } from '../actions/productActions'
+import { Product, Message, Loader } from './'
 
 const Products = () => {
   const dispatch = useDispatch()
