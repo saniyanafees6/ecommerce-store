@@ -1,10 +1,10 @@
-{
+{ 
   "name": "store-application",
   "version": "1.0.0",
   "description": "lights store",
   "main": "server.js",
   "type": "module",
-  "scripts": {
+  "scripts": { 
     "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
@@ -14,7 +14,7 @@
   },
   "author": "Saniya Nafees",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": { 
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^10.0.0",
@@ -23,8 +23,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.11"
   },
-  "devDependencies": {
+  "devDependencies": { 
     "concurrently": "^6.3.0",
     "nodemon": "^2.0.13"
   }
-}
+ }

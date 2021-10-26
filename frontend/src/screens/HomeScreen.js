@@ -1,8 +1,7 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap';
 import { Hero, Products, Brands } from '../components'
 
-const HomeScreen = () => {
+const HomeScreen = () => { 
     return (
         <>
             <Hero />
@@ -10,6 +9,6 @@ const HomeScreen = () => {
             <Brands />
         </>
     )
-}
+ }
 
 export default HomeScreen

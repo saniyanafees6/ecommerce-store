@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=DM+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=DM+Sans&display=swap");
 main {
 	min-height: 85vh;
 }
@@ -14,7 +14,7 @@ main {
 }
 .hero__heading,
 .secondary__heading {
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: "Cinzel Decorative", cursive;
 	color: #ffffff;
 }
 .hero__heading {
@@ -33,7 +33,7 @@ h2.secondary__heading {
 .hero__description,
 .hero__button,
 .hero__card__text {
-	font-family: 'DM Sans', sans-serif;
+	font-family: "DM Sans", sans-serif;
 	color: #cccccc;
 	letter-spacing: 0.3px;
 }

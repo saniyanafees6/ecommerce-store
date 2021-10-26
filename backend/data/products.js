@@ -1,5 +1,5 @@
 const products = [
-  {
+  { 
     name: 'Black LED Pendant Lamp',
     image: '/images/pendantlight.png',
     description:
@@ -10,7 +10,7 @@ const products = [
     rating: 4.5,
     numReviews: 12,
   },
-  {
+  { 
     name: 'Table Lamp',
     image: '/images/tablelamp1.png',
     description:
@@ -21,7 +21,7 @@ const products = [
     rating: 4.0,
     numReviews: 8,
   },
-  {
+  { 
     name: 'Table Lamp',
     image: '/images/tablelamp2.png',
     description:
@@ -32,7 +32,7 @@ const products = [
     rating: 3.5,
     numReviews: 12,
   },
-  {
+  { 
     name: 'Floor Lamp',
     image: '/images/floorlamp.png',
     description:
@@ -43,7 +43,7 @@ const products = [
     rating: 5,
     numReviews: 12,
   },
-  {
+  { 
     name: 'Hexagon Sconce',
     image: '/images/hexchandelier.png',
     description:
